@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orça+ — Telas do Protótipo</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gallery">
+
+  <!-- Ícones (usados com <svg class="icon"><use href="#i-nome"/></svg>) -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7" /><path d="M6 10v9h5v-5h2v5h5v-9" /></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M5 6h14" /><path d="M5 12h14" /><path d="M5 18h14" /></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10" /><path d="M11 20V4" /><path d="M18 20v-7" /></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24">
+      <path d="M4 7h9" /><circle cx="16" cy="7" r="2" />
+      <path d="M4 12h3" /><circle cx="9" cy="12" r="2" /><path d="M13 12h7" />
+      <path d="M4 17h9" /><circle cx="16" cy="17" r="2" />
+    </symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" /></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M4 4h16v12H9l-5 4V4z" /></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="8" y="8" width="12" height="12" rx="2" />
+      <path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3" />
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11" /><path d="M7 11l5 5 5-5" /><path d="M5 20h14" /></symbol>
+    <symbol id="i-trend-up" viewBox="0 0 24 24"><path d="M4 16l5-5 4 4 7-7" /><path d="M16 7h5v5" /></symbol>
+    <symbol id="i-trend-down" viewBox="0 0 24 24"><path d="M4 8l5 5 4-4 7 7" /><path d="M16 16h5v-5" /></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M8 12.5l2.5 2.5L16 9" /></symbol>
+    <symbol id="i-overview" viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14" /><path d="M9 21v-6h6v6" /></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5" /></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24">
+      <rect x="3" y="7" width="18" height="12" rx="2" /><path d="M3 10h18" />
+      <circle cx="17" cy="14.5" r="1" fill="currentColor" stroke="none" />
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="3" /><path d="M3 20v-1a6 6 0 0112 0v1" />
+      <circle cx="17" cy="9" r="2.4" /><path d="M15.5 20v-.8a5 5 0 015-4.9" />
+    </symbol>
+  </svg>
+
+  <!-- Cabeçalho -->
+  <header class="gallery-header">
+    <span class="logo">Orça<span>+</span></span>
+    <p>Protótipo de alta fidelidade — telas e requisitos funcionais atendidos.</p>
+  </header>
+
+  <main class="gallery-main">
+
+    <!-- ================================================================
+         AUTÔNOMO
+         ================================================================ -->
+    <section class="gallery-group" id="autonomo">
+      <h2 class="gallery-title">Autônomo</h2>
+      <p class="gallery-desc">App mobile usado pelo profissional para criar e acompanhar orçamentos.</p>
+
+      <div class="gallery-grid">
+
+        <!-- A1 · Login -->
+        <figure class="gallery-item" id="A1">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <div class="screen-center login">
+                <div class="login-brand">
+                  <span class="logo">Orça<span>+</span></span>
+                  <p class="tagline">Orçamentos profissionais em poucos toques</p>
+                </div>
+
+                <form class="login-form" onsubmit="return false">
+                  <div>
+                    <label class="field-label">E-mail</label>
+                    <input class="field-input" type="email" value="autonomo@email.com">
+                  </div>
+                  <div>
+                    <label class="field-label">Senha</label>
+                    <input class="field-input" type="password" value="12345678">
+                  </div>
+                  <button type="button" class="btn-primary">Entrar</button>
+                  <button type="button" class="linklike muted">Esqueci minha senha</button>
+                </form>
+
+                <hr class="divider">
+
+                <p class="login-footer">Ainda não tem conta? <button class="linklike">Criar conta</button></p>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <b>A1 · Login</b>
+          </figcaption>
+        </figure>
+
+        <!-- A2 · Início -->
+        <figure class="gallery-item" id="A2">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <span class="logo">Orça<span>+</span></span>
+                <div class="avatar">A</div>
+              </header>
+
+              <div class="screen-body">
+                <h1>Olá! Bom trabalho hoje.</h1>
+
+                <div class="stats">
+                  <div class="stat">
+                    <div class="stat-label">Orçamentos este mês</div>
+                    <div class="stat-value num">12</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-label">Taxa de aprovação</div>
+                    <div class="stat-value num">68%</div>
+                  </div>
+                </div>
+
+                <button class="btn-primary btn-lg">
+                  <svg class="icon"><use href="#i-plus" /></svg>Novo orçamento
+                </button>
+
+                <div>
+                  <div class="section-header">
+                    <h2 class="section-title lg">Últimos orçamentos</h2>
+                    <button class="linklike accent">Ver todos</button>
+                  </div>
+
+                  <article class="quote">
+                    <div>
+                      <div class="quote-client">Loja da Camila</div>
+                      <div class="quote-service">Troca de registro hidráulico</div>
+                    </div>
+                    <div class="quote-meta">
+                      <div class="quote-value">R$ 304,50</div>
+                      <span class="chip chip-success">Aprovado</span>
+                    </div>
+                  </article>
+                  <article class="quote">
+                    <div>
+                      <div class="quote-client">Edifício Aurora</div>
+                      <div class="quote-service">Manutenção elétrica</div>
+                    </div>
+                    <div class="quote-meta">
+                      <div class="quote-value">R$ 512,00</div>
+                      <span class="chip chip-neutral">Enviado</span>
+                    </div>
+                  </article>
+                  <article class="quote">
+                    <div>
+                      <div class="quote-client">João Pedro Reis</div>
+                      <div class="quote-service">Reparo de vazamento</div>
+                    </div>
+                    <div class="quote-meta">
+                      <div class="quote-value">R$ 189,90</div>
+                      <span class="chip chip-info">Visualizado</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <nav class="tab-bar">
+                <button class="navbtn active"><svg class="icon"><use href="#i-home" /></svg><span>Início</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-list" /></svg><span>Orçamentos</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-chart" /></svg><span>Financeiro</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-sliders" /></svg><span>Ajustes</span></button>
+              </nav>
+            </div>
+          </div>
+          <figcaption>
+            <b>A2 · Início</b>
+            <span class="gallery-rf">RF-007</span>
+          </figcaption>
+        </figure>
+
+        <!-- A3 · Configurações -->
+        <figure class="gallery-item" id="A3">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <button class="iconbtn"><svg class="icon"><use href="#i-back" /></svg></button>
+                <div class="app-bar-title">Configurações</div>
+                <div class="app-bar-spacer"></div>
+              </header>
+
+              <div class="screen-body gap-26">
+                <div>
+                  <h2 class="section-title">Meu preço</h2>
+                  <label class="field-label">Valor da minha hora de trabalho</label>
+                  <input class="field-input" value="R$ 45,00">
+                </div>
+
+                <div>
+                  <div class="section-header">
+                    <h2 class="section-title">Materiais cadastrados</h2>
+                    <button class="linklike accent">+ Adicionar</button>
+                  </div>
+                  <div class="material-row">
+                    <div class="material-name">Tubo PVC 100mm</div>
+                    <div class="material-price">R$ 18,50 /m</div>
+                  </div>
+                  <div class="material-row">
+                    <div class="material-name">Conexão T</div>
+                    <div class="material-price">R$ 6,20 /un</div>
+                  </div>
+                  <div class="material-row">
+                    <div class="material-name">Cabo elétrico 2,5mm</div>
+                    <div class="material-price">R$ 3,10 /m</div>
+                  </div>
+                </div>
+              </div>
+
+              <footer class="action-bar">
+                <button class="btn-primary">Salvar alterações</button>
+              </footer>
+
+              <nav class="tab-bar">
+                <button class="navbtn"><svg class="icon"><use href="#i-home" /></svg><span>Início</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-list" /></svg><span>Orçamentos</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-chart" /></svg><span>Financeiro</span></button>
+                <button class="navbtn active"><svg class="icon"><use href="#i-sliders" /></svg><span>Ajustes</span></button>
+              </nav>
+            </div>
+          </div>
+          <figcaption>
+            <b>A3 · Configurações</b>
+            <span class="gallery-rf">RF-002</span>
+          </figcaption>
+        </figure>
+
+        <!-- A4 · Novo orçamento -->
+        <figure class="gallery-item" id="A4">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <button class="iconbtn"><svg class="icon"><use href="#i-back" /></svg></button>
+                <div class="app-bar-title">Novo orçamento</div>
+                <div class="app-bar-spacer"></div>
+              </header>
+
+              <div class="screen-body gap-18">
+                <div>
+                  <label class="field-label">Cliente</label>
+                  <div class="field-input select">Loja da Camila <svg class="icon"><use href="#i-chevron-down" /></svg></div>
+                </div>
+                <div>
+                  <label class="field-label">Serviço</label>
+                  <input class="field-input" value="Troca de registro hidráulico">
+                </div>
+                <div>
+                  <div class="section-header">
+                    <label class="field-label">Materiais</label>
+                    <button class="linklike accent">+ Adicionar material</button>
+                  </div>
+                  <div class="material-pills">
+                    <div class="material-pill"><span>Tubo PVC 100mm — 3m</span><strong>R$ 55,50</strong></div>
+                    <div class="material-pill"><span>Conexão T — 2 un</span><strong>R$ 12,40</strong></div>
+                  </div>
+                </div>
+                <div>
+                  <label class="field-label">Horas estimadas</label>
+                  <input class="field-input" value="3,5 h">
+                </div>
+              </div>
+
+              <footer class="action-bar">
+                <button class="btn-primary">Calcular orçamento</button>
+              </footer>
+            </div>
+          </div>
+          <figcaption>
+            <b>A4 · Novo orçamento</b>
+            <span class="gallery-rf">RF-003</span>
+          </figcaption>
+        </figure>
+
+        <!-- A5 · Resumo do orçamento -->
+        <figure class="gallery-item" id="A5">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <button class="iconbtn"><svg class="icon"><use href="#i-back" /></svg></button>
+                <div class="app-bar-title">Resumo do orçamento</div>
+                <div class="app-bar-spacer"></div>
+              </header>
+
+              <div class="screen-body gap-18">
+                <div>
+                  <div class="summary-row"><span>Custo de materiais</span><strong>R$ 67,90</strong></div>
+                  <div class="summary-row"><span>Mão de obra (3,5h × R$ 45)</span><strong>R$ 157,50</strong></div>
+                  <div class="summary-row total"><span>Custo total</span><strong>R$ 225,40</strong></div>
+                </div>
+
+                <div>
+                  <label class="field-label">Margem de lucro</label>
+                  <div class="meter">
+                    <div class="meter-track"><div class="meter-fill" style="width:35%"></div></div>
+                    <span class="meter-value">35%</span>
+                  </div>
+                </div>
+
+                <div class="price-hero">
+                  <span class="price-hero-label">Preço final ao cliente</span>
+                  <span class="num">R$ 304,50</span>
+                </div>
+              </div>
+
+              <footer class="action-bar">
+                <button class="btn-primary">Gerar orçamento</button>
+              </footer>
+            </div>
+          </div>
+          <figcaption>
+            <b>A5 · Resumo do orçamento</b>
+            <span class="gallery-rf">RF-003</span>
+          </figcaption>
+        </figure>
+
+        <!-- A6 · Orçamento gerado -->
+        <figure class="gallery-item" id="A6">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <button class="iconbtn"><svg class="icon"><use href="#i-back" /></svg></button>
+                <div class="app-bar-title">Orçamento gerado</div>
+                <div class="app-bar-spacer"></div>
+              </header>
+
+              <div class="screen-body gap-18">
+                <article class="receipt">
+                  <div class="receipt-head">
+                    <span class="logo">Orça<span>+</span></span>
+                    <span class="chip chip-neutral">Autônomo</span>
+                  </div>
+                  <div class="subtitle">Para</div>
+                  <div class="receipt-to">Loja da Camila</div>
+                  <hr class="divider">
+                  <div class="receipt-section">Mão de obra</div>
+                  <div class="receipt-line"><span>Troca de registro hidráulico (3,5h)</span><strong>R$ 157,50</strong></div>
+                  <div class="receipt-section">Materiais</div>
+                  <div class="receipt-line"><span>Tubo PVC 100mm (3m)</span><strong>R$ 55,50</strong></div>
+                  <div class="receipt-line"><span>Conexão T (2 un)</span><strong>R$ 12,40</strong></div>
+                  <hr class="divider">
+                  <div class="receipt-total"><span>Total</span><span class="num">R$ 304,50</span></div>
+                  <div class="receipt-note">Válido por 7 dias</div>
+                </article>
+              </div>
+
+              <footer class="action-bar stack">
+                <button class="btn-primary"><svg class="icon"><use href="#i-message" /></svg>Compartilhar no WhatsApp</button>
+                <div class="btn-row">
+                  <button class="btn-secondary"><svg class="icon"><use href="#i-copy" /></svg>Copiar link</button>
+                  <button class="btn-secondary"><svg class="icon"><use href="#i-download" /></svg>Baixar PDF</button>
+                </div>
+                <button class="linklike muted">Voltar ao início</button>
+              </footer>
+            </div>
+          </div>
+          <figcaption>
+            <b>A6 · Orçamento gerado</b>
+            <span class="gallery-rf">RF-004 · RF-005 · RF-006</span>
+          </figcaption>
+        </figure>
+
+        <!-- A7 · Meus orçamentos -->
+        <figure class="gallery-item" id="A7">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <span class="logo">Orça<span>+</span></span>
+                <div class="avatar">A</div>
+              </header>
+
+              <div class="filters">
+                <button class="filter active">Todos</button>
+                <button class="filter">Enviado</button>
+                <button class="filter">Aprovado</button>
+                <button class="filter">Recusado</button>
+              </div>
+
+              <div class="screen-list">
+                <article class="quote">
+                  <div>
+                    <div class="quote-client">Loja da Camila</div>
+                    <div class="quote-service">Troca de registro hidráulico</div>
+                  </div>
+                  <div class="quote-meta">
+                    <div class="quote-value">R$ 304,50</div>
+                    <span class="chip chip-success">Aprovado</span>
+                  </div>
+                  <button class="linklike accent">Converter em receita →</button>
+                </article>
+                <article class="quote">
+                  <div>
+                    <div class="quote-client">Edifício Aurora</div>
+                    <div class="quote-service">Manutenção elétrica</div>
+                  </div>
+                  <div class="quote-meta">
+                    <div class="quote-value">R$ 512,00</div>
+                    <span class="chip chip-neutral">Enviado</span>
+                  </div>
+                </article>
+                <article class="quote">
+                  <div>
+                    <div class="quote-client">João Pedro Reis</div>
+                    <div class="quote-service">Reparo de vazamento</div>
+                  </div>
+                  <div class="quote-meta">
+                    <div class="quote-value">R$ 189,90</div>
+                    <span class="chip chip-info">Visualizado</span>
+                  </div>
+                </article>
+                <article class="quote">
+                  <div>
+                    <div class="quote-client">Condomínio Vitta</div>
+                    <div class="quote-service">Instalação de torneiras</div>
+                  </div>
+                  <div class="quote-meta">
+                    <div class="quote-value">R$ 276,00</div>
+                    <span class="chip chip-danger">Recusado</span>
+                  </div>
+                </article>
+                <article class="quote">
+                  <div>
+                    <div class="quote-client">Marina Alves</div>
+                    <div class="quote-service">Desentupimento de pia</div>
+                  </div>
+                  <div class="quote-meta">
+                    <div class="quote-value">R$ 145,00</div>
+                    <span class="chip chip-success">Aprovado</span>
+                  </div>
+                </article>
+              </div>
+
+              <nav class="tab-bar">
+                <button class="navbtn"><svg class="icon"><use href="#i-home" /></svg><span>Início</span></button>
+                <button class="navbtn active"><svg class="icon"><use href="#i-list" /></svg><span>Orçamentos</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-chart" /></svg><span>Financeiro</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-sliders" /></svg><span>Ajustes</span></button>
+              </nav>
+            </div>
+          </div>
+          <figcaption>
+            <b>A7 · Meus orçamentos</b>
+            <span class="gallery-rf">RF-007 · RF-011</span>
+          </figcaption>
+        </figure>
+
+        <!-- A8 · Financeiro -->
+        <figure class="gallery-item" id="A8">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <span class="logo">Orça<span>+</span></span>
+                <div class="avatar">A</div>
+              </header>
+
+              <div class="screen-body">
+                <div class="stats compact">
+                  <div class="stat">
+                    <div class="stat-label">Recebido este mês</div>
+                    <div class="stat-value num">R$ 3.240</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-label">A receber (aprovados)</div>
+                    <div class="stat-value num">R$ 890</div>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="section-title">Receita mensal</h2>
+                  <div class="bar-chart">
+                    <div class="bar-col"><div class="bar" style="height:40px"></div><span class="bar-label">Abr</span></div>
+                    <div class="bar-col"><div class="bar" style="height:55px"></div><span class="bar-label">Mai</span></div>
+                    <div class="bar-col"><div class="bar" style="height:48px"></div><span class="bar-label">Jun</span></div>
+                    <div class="bar-col"><div class="bar" style="height:70px"></div><span class="bar-label">Jul</span></div>
+                    <div class="bar-col"><div class="bar" style="height:62px"></div><span class="bar-label">Ago</span></div>
+                    <div class="bar-col"><div class="bar highlight" style="height:85px"></div><span class="bar-label">Set</span></div>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="section-title tight">Lançamentos recentes</h2>
+                  <div class="txn">
+                    <div class="txn-icon"><svg class="icon"><use href="#i-trend-up" /></svg></div>
+                    <div class="txn-desc">Loja da Camila — orçamento aprovado</div>
+                    <div class="txn-amount">+ R$ 304,50</div>
+                  </div>
+                  <div class="txn out">
+                    <div class="txn-icon"><svg class="icon"><use href="#i-trend-down" /></svg></div>
+                    <div class="txn-desc">Materiais — reposição de estoque</div>
+                    <div class="txn-amount">- R$ 210,00</div>
+                  </div>
+                  <div class="txn">
+                    <div class="txn-icon"><svg class="icon"><use href="#i-trend-up" /></svg></div>
+                    <div class="txn-desc">Marina Alves — orçamento aprovado</div>
+                    <div class="txn-amount">+ R$ 145,00</div>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="tab-bar">
+                <button class="navbtn"><svg class="icon"><use href="#i-home" /></svg><span>Início</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-list" /></svg><span>Orçamentos</span></button>
+                <button class="navbtn active"><svg class="icon"><use href="#i-chart" /></svg><span>Financeiro</span></button>
+                <button class="navbtn"><svg class="icon"><use href="#i-sliders" /></svg><span>Ajustes</span></button>
+              </nav>
+            </div>
+          </div>
+          <figcaption>
+            <b>A8 · Financeiro</b>
+            <span class="gallery-rf">RF-011 · RF-016</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CLIENTE
+         ================================================================ -->
+    <section class="gallery-group" id="cliente">
+      <h2 class="gallery-title">Cliente</h2>
+      <p class="gallery-desc">Página que o cliente recebe para visualizar e aprovar o orçamento.</p>
+
+      <div class="gallery-grid">
+
+        <!-- C1 · Orçamento recebido -->
+        <figure class="gallery-item" id="C1">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <header class="app-bar">
+                <div class="sender">
+                  <div class="avatar sm">A</div>
+                  <div>
+                    <div class="sender-label">Orçamento de</div>
+                    <div class="sender-name">Autônomo · via <span class="logo">Orça<span>+</span></span></div>
+                  </div>
+                </div>
+                <span class="chip chip-neutral">Recebido</span>
+              </header>
+
+              <div class="screen-body gap-18">
+                <div class="doc-title">
+                  <h1>Troca de registro hidráulico</h1>
+                  <div class="subtitle">Para Loja da Camila</div>
+                </div>
+
+                <article class="receipt outline">
+                  <div class="receipt-section">Mão de obra</div>
+                  <div class="receipt-line"><span>Troca de registro hidráulico (3,5h)</span><strong>R$ 157,50</strong></div>
+                  <div class="receipt-section">Materiais</div>
+                  <div class="receipt-line"><span>Tubo PVC 100mm (3m)</span><strong>R$ 55,50</strong></div>
+                  <div class="receipt-line"><span>Conexão T (2 un)</span><strong>R$ 12,40</strong></div>
+                  <hr class="divider">
+                  <div class="receipt-total"><span>Total</span><span class="num">R$ 304,50</span></div>
+                  <div class="receipt-note">Válido até 28/09</div>
+                </article>
+              </div>
+
+              <footer class="action-bar stack">
+                <button class="btn-primary btn-lg">Aprovar orçamento</button>
+                <button class="linklike muted">Recusar</button>
+              </footer>
+            </div>
+          </div>
+          <figcaption>
+            <b>C1 · Orçamento recebido</b>
+            <span class="gallery-rf">RF-005 · RF-008</span>
+          </figcaption>
+        </figure>
+
+        <!-- C2 · Confirmação -->
+        <figure class="gallery-item" id="C2">
+          <div class="screen-frame frame-phone">
+            <div class="screen-inner">
+              <div class="screen-center">
+                <div class="success-icon"><svg class="icon"><use href="#i-check-circle" /></svg></div>
+
+                <div>
+                  <h1>Orçamento aprovado!</h1>
+                  <div class="subtitle">Comprovante Nº 0231-ORC</div>
+                </div>
+
+                <dl class="kv-list card">
+                  <div class="kv"><dt>Profissional</dt><dd>Autônomo</dd></div>
+                  <div class="kv"><dt>Valor</dt><dd>R$ 304,50</dd></div>
+                  <div class="kv"><dt>Data</dt><dd>21/09/2026</dd></div>
+                </dl>
+
+                <p class="notice">Você vai receber um e-mail de confirmação com os detalhes e o agendamento do serviço.</p>
+
+                <button class="btn-secondary"><svg class="icon"><use href="#i-download" /></svg>Baixar comprovante</button>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <b>C2 · Confirmação</b>
+            <span class="gallery-rf">RF-009 · RF-010</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         GESTOR
+         ================================================================ -->
+    <section class="gallery-group" id="gestor">
+      <h2 class="gallery-title">Gestor</h2>
+      <p class="gallery-desc">Painel web para o gestor acompanhar a equipe.</p>
+
+      <div class="gallery-grid">
+
+        <!-- G1 · Visão geral da equipe -->
+        <figure class="gallery-item" id="G1">
+          <div class="screen-frame frame-web">
+            <div class="screen-inner">
+              <aside class="sidebar">
+                <span class="logo">Orça<span>+</span></span>
+                <nav class="sidebar-nav">
+                  <button class="sidebtn active"><svg class="icon"><use href="#i-overview" /></svg>Visão geral</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-file" /></svg>Propostas</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-wallet" /></svg>Financeiro</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-users" /></svg>Equipe</button>
+                </nav>
+                <div class="sidebar-user"><div class="avatar sm neutral">G</div>Gestor</div>
+              </aside>
+
+              <div class="web-main">
+                <div class="page-header">
+                  <h1>Visão geral da equipe</h1>
+                  <span class="period-select">Setembro 2026 <svg class="icon"><use href="#i-chevron-down" /></svg></span>
+                </div>
+
+                <div class="stats">
+                  <div class="stat">
+                    <div class="stat-label">Orçamentos ativos</div>
+                    <div class="stat-value num">14</div>
+                  </div>
+                  <div class="stat warning">
+                    <div class="stat-label">Aguardando aprovação</div>
+                    <div class="stat-value num">3</div>
+                  </div>
+                  <div class="stat success">
+                    <div class="stat-label">Fechado este mês</div>
+                    <div class="stat-value num">R$ 18.400</div>
+                  </div>
+                </div>
+
+                <div class="table-card">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Funcionário</th>
+                        <th>Cliente</th>
+                        <th>Valor</th>
+                        <th>Status</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-name">Rafael</td>
+                        <td class="text-muted">Loja da Camila</td>
+                        <td class="cell-value">R$ 304,50</td>
+                        <td><span class="chip chip-success">Aprovado</span></td>
+                        <td class="cell-end"><span class="empty-dash">—</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-name">Marcos</td>
+                        <td class="text-muted">Condomínio Vitta</td>
+                        <td class="cell-value">R$ 940,00</td>
+                        <td><span class="chip chip-warning">Desconto alto</span></td>
+                        <td class="cell-end"><button class="linklike accent">Revisar →</button></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-name">Rafael</td>
+                        <td class="text-muted">Edifício Aurora</td>
+                        <td class="cell-value">R$ 512,00</td>
+                        <td><span class="chip chip-neutral">Enviado</span></td>
+                        <td class="cell-end"><span class="empty-dash">—</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-name">Juliana</td>
+                        <td class="text-muted">Marina Alves</td>
+                        <td class="cell-value">R$ 145,00</td>
+                        <td><span class="chip chip-success">Aprovado</span></td>
+                        <td class="cell-end"><span class="empty-dash">—</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-name">Marcos</td>
+                        <td class="text-muted">Restaurante Sabor</td>
+                        <td class="cell-value">R$ 1.280,00</td>
+                        <td><span class="chip chip-warning">Pendente</span></td>
+                        <td class="cell-end"><span class="empty-dash">—</span></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-name">Rafael</td>
+                        <td class="text-muted">João Pedro Reis</td>
+                        <td class="cell-value">R$ 189,90</td>
+                        <td><span class="chip chip-info">Visualizado</span></td>
+                        <td class="cell-end"><span class="empty-dash">—</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <b>G1 · Visão geral da equipe</b>
+            <span class="gallery-rf">RF-012 · RF-013</span>
+          </figcaption>
+        </figure>
+
+        <!-- G2 · Revisar proposta -->
+        <figure class="gallery-item" id="G2">
+          <div class="screen-frame frame-web">
+            <div class="screen-inner">
+              <aside class="sidebar">
+                <span class="logo">Orça<span>+</span></span>
+                <nav class="sidebar-nav">
+                  <button class="sidebtn"><svg class="icon"><use href="#i-overview" /></svg>Visão geral</button>
+                  <button class="sidebtn active"><svg class="icon"><use href="#i-file" /></svg>Propostas</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-wallet" /></svg>Financeiro</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-users" /></svg>Equipe</button>
+                </nav>
+                <div class="sidebar-user"><div class="avatar sm neutral">G</div>Gestor</div>
+              </aside>
+
+              <div class="web-main">
+                <div><button class="linklike muted">← Voltar à visão geral</button></div>
+
+                <div class="page-header top">
+                  <div>
+                    <h1>Revisar proposta</h1>
+                    <div class="subtitle">Condomínio Vitta · solicitado por Marcos</div>
+                  </div>
+                  <span class="chip chip-warning">Desconto alto</span>
+                </div>
+
+                <div class="panels">
+                  <div class="panel wide">
+                    <h2 class="section-title">Detalhes do orçamento</h2>
+                    <dl class="kv-list">
+                      <div class="kv"><dt>Serviço</dt><dd>Instalação de torneiras</dd></div>
+                      <div class="kv"><dt>Custo total</dt><dd>R$ 740,00</dd></div>
+                      <div class="kv"><dt>Margem original</dt><dd>30%</dd></div>
+                      <div class="kv"><dt>Desconto solicitado</dt><dd class="text-warning">18%</dd></div>
+                    </dl>
+                  </div>
+
+                  <div class="panel muted">
+                    <h2 class="section-title">Ajustar desconto</h2>
+                    <div class="meter warning">
+                      <div class="meter-track"><div class="meter-fill" style="width:60%"></div></div>
+                      <span class="meter-value">18%</span>
+                    </div>
+                    <hr class="divider">
+                    <dl class="kv-list">
+                      <div class="kv"><dt>Nova margem</dt><dd>12%</dd></div>
+                      <div class="kv"><dt>Valor final ao cliente</dt><dd class="num">R$ 940,00</dd></div>
+                    </dl>
+                  </div>
+                </div>
+
+                <div class="web-actions">
+                  <button class="btn-primary">Aprovar desconto</button>
+                  <button class="btn-secondary danger">Recusar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <b>G2 · Revisar proposta</b>
+            <span class="gallery-rf">RF-013 · RF-014 · RF-015</span>
+          </figcaption>
+        </figure>
+
+        <!-- G3 · Fluxo de caixa -->
+        <figure class="gallery-item" id="G3">
+          <div class="screen-frame frame-web">
+            <div class="screen-inner">
+              <aside class="sidebar">
+                <span class="logo">Orça<span>+</span></span>
+                <nav class="sidebar-nav">
+                  <button class="sidebtn"><svg class="icon"><use href="#i-overview" /></svg>Visão geral</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-file" /></svg>Propostas</button>
+                  <button class="sidebtn active"><svg class="icon"><use href="#i-wallet" /></svg>Financeiro</button>
+                  <button class="sidebtn"><svg class="icon"><use href="#i-users" /></svg>Equipe</button>
+                </nav>
+                <div class="sidebar-user"><div class="avatar sm neutral">G</div>Gestor</div>
+              </aside>
+
+              <div class="web-main">
+                <div class="page-header">
+                  <h1>Fluxo de caixa da equipe</h1>
+                  <span class="period-select">Últimos 6 meses <svg class="icon"><use href="#i-chevron-down" /></svg></span>
+                </div>
+
+                <div class="panels">
+                  <div class="panel wide">
+                    <div class="section-header">
+                      <h2 class="section-title">Receita prevista x realizada</h2>
+                      <div class="legend">
+                        <span class="legend-item"><span class="swatch"></span>Prevista</span>
+                        <span class="legend-item"><span class="swatch highlight"></span>Realizada</span>
+                      </div>
+                    </div>
+                    <div class="bar-chart grouped">
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:60px"></div><div class="bar highlight" style="height:46px"></div></div>
+                        <span class="bar-label">Abr</span>
+                      </div>
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:75px"></div><div class="bar highlight" style="height:68px"></div></div>
+                        <span class="bar-label">Mai</span>
+                      </div>
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:66px"></div><div class="bar highlight" style="height:60px"></div></div>
+                        <span class="bar-label">Jun</span>
+                      </div>
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:92px"></div><div class="bar highlight" style="height:80px"></div></div>
+                        <span class="bar-label">Jul</span>
+                      </div>
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:84px"></div><div class="bar highlight" style="height:78px"></div></div>
+                        <span class="bar-label">Ago</span>
+                      </div>
+                      <div class="bar-col">
+                        <div class="bar-pair"><div class="bar" style="height:108px"></div><div class="bar highlight" style="height:60px"></div></div>
+                        <span class="bar-label">Set</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel">
+                    <h2 class="section-title">Resumo por funcionário</h2>
+                    <table class="data-table">
+                      <tbody>
+                        <tr>
+                          <td class="cell-name">Rafael</td>
+                          <td class="text-muted">9 orçamentos</td>
+                          <td class="cell-value cell-end">R$ 6.210</td>
+                        </tr>
+                        <tr>
+                          <td class="cell-name">Marcos</td>
+                          <td class="text-muted">3 orçamentos</td>
+                          <td class="cell-value cell-end">R$ 2.720</td>
+                        </tr>
+                        <tr>
+                          <td class="cell-name">Juliana</td>
+                          <td class="text-muted">5 orçamentos</td>
+                          <td class="cell-value cell-end">R$ 3.940</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <b>G3 · Fluxo de caixa</b>
+            <span class="gallery-rf">RF-016</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
